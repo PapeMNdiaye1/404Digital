@@ -1,12 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
-
 function TopBare({ onChangeTab }) {
 
     useEffect(() => {
         let allMenuSection = document.querySelectorAll('.One-Section')
-
+        console.log(allMenuSection);
         for (let i = 0; i < allMenuSection.length; i++) {
             allMenuSection[allMenuSection.length - (i + 1)].style.transitionDelay = `${i * .1}s`;
         }
@@ -58,7 +57,7 @@ function TopBare({ onChangeTab }) {
                             TRAVAUX
                         </div>
                         <div className='slides' >
-                            GALERIE
+                            ARTICLES
                         </div>
                         <div className='slides' >
                             SERVICES
@@ -77,22 +76,22 @@ function TopBare({ onChangeTab }) {
                 <nav className='Menu-container'>
                     <OneSection parentCallback={callback} link={'/'} title={'ACCUEIL'} />
                     <OneSection parentCallback={callback} link={'/Travaux'} title={'TRAVAUX'} />
-                    <OneSection parentCallback={callback} link={'/Gallery'} title={'GALERIE'} />
+                    <OneSection parentCallback={callback} link={'/Gallery'} title={'ARTICLES'} />
                     <OneSection parentCallback={callback} link={'/Services'} title={'SERVICES'} />
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </nav>
                 <div className="network_container">
-                    <a href="https://www.instagram.com/arch_viz_sn/" target="_blank">
+                    <a href="https://www.linkedin.com/in/digital-sn-50276a222/" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=Message provenant de ArchViz.sn" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=221777278655&text=The message" target="_blank">
                         <div className="network">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </div>
                     </a>
-                    <a href="mailto:archviz.sn@gmail.com?subject=Message provenant de ArchViz.sn" target="_blank">
+                    <a href="mailto:digital404sn@gmail.com?subject=The message" target="_blank">
                         <div className="network">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
@@ -123,8 +122,8 @@ function OneSection({ title, parentCallback, link }) {
             case "SERVICES":
                 setTheLink('/Services')
                 break;
-            case "GALERIE":
-                setTheLink('/Galerie')
+            case "ARTICLES":
+                setTheLink('/Articles')
                 break;
             case "CONTACT":
                 setTheLink('/Contact')

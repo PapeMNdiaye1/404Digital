@@ -1,15 +1,11 @@
 import { React, useEffect, } from 'react';
 
-
-
 function Contacts() {
-
 
     useEffect(() => {
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-400%`
-
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -20,48 +16,38 @@ function Contacts() {
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
-        
-        let TheFooter = document.querySelector(".the_footer")
-        TheFooter.style.opacity = '1';
-
-
 
         return () => {
 
         }
     }, []);
 
-
     return (
         <div id="Contacts">
             <div className='Contact-container'>
 
-                <OneSection link={'mailto:archviz.sn@gmail.com?subject=The message'}
-                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
-                    title2={<div className="network">archviz.sn@gmail.com</div>}
-                />
-                <OneSection link={'https://www.youtube.com/@archviz-dakar'}
-                    title={<div className="network"><ion-icon name="logo-youtube"></ion-icon>YOUTUBE</div>}
-                    title2={<div className="network">@archviz-dakar</div>}
-                />
                 <OneSection link={'https://api.whatsapp.com/send?phone=221777278655&text=The message'}
                     title={<div className="network"><ion-icon name="logo-whatsapp"></ion-icon>WHATSAPP</div>}
                     title2={<div className="network">+221 777278655</div>}
                 />
-                <OneSection link={'https://www.instagram.com/arch_viz_sn/'}
+                <OneSection link={'https://www.instagram.com/404_digital/'}
                     title={<div className="network"><ion-icon name="logo-instagram"></ion-icon>INSTAGRAM</div>}
-                    title2={<div className="network">@arch_viz_sn</div>}
-
+                    title2={<div className="network">@404_digital</div>}
                 />
-                <OneSection link={'https://www.facebook.com/ARVHVIZ/'}
-                    title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
-                    title2={<div className="network">f/ARCHVIZ</div>}
-                />
-                <OneSection link={'https://www.linkedin.com/company/archviz-sn/'}
+                <OneSection link={'https://www.linkedin.com/in/digital-sn-50276a222/'}
                     title={<div className="network"><ion-icon name="logo-linkedin"></ion-icon>LINKEDIN</div>}
-                    title2={<div className="network">in/Archviz</div>}
+                    title2={<div className="network">in/404 Digital</div>}
+                />
+                <OneSection link={'https://web.facebook.com/profile.php?id=100083761231857'}
+                    title={<div className="network"><ion-icon name="logo-facebook"></ion-icon>FACEBOOK</div>}
+                    title2={<div className="network">f/404 Digital sn</div>}
 
                 />
+                <OneSection link={'mailto:digital404sn@gmail.com?subject=The message'}
+                    title={<div className="network"><ion-icon name="mail-outline"></ion-icon>MAIL</div>}
+                    title2={<div className="network">digital404sn@gmail.com</div>}
+                />
+
             </div>
         </div>
     );

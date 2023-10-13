@@ -22,7 +22,6 @@ function TheLoader() {
 }
 //!###############################################################
 
-const Gallery = React.lazy(() => import('./Pages/Galerie'));
 const Interior1 = React.lazy(() => import('./Pages/Projects/Interior_Design'));
 const SmallHouse1 = React.lazy(() => import('./Pages/Projects/Small_House_1'));
 const Hangar1 = React.lazy(() => import('./Pages/Projects/Hangar_1'));
@@ -72,16 +71,7 @@ function App() {
             <Route exact path="/Services" element={<Service />} />
             <Route exact path="/Contact" element={<Suspense fallback={<TheLoader />}><Contact /></Suspense>} />
 
-            <Route exact path="/Galerie" element={
-              <Suspense fallback={<TheLoader />}>
-                <Gallery
-                  TheImageToGallery={TheImage}
-                  TheTitleToGallery={TheTitle}
-                  TheDateToGallery={TheDate}
-                  TheLinkToGallery={TheLink}
-                />
-              </Suspense>
-            } />
+
 
             {/* !############################################## */}
 

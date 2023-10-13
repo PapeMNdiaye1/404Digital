@@ -49,6 +49,8 @@
             font-size: 2em;
             font-weight: 800;
             margin-bottom: .2em;
+            color: var(--color0);
+            margin-bottom: 1em;
         }
 
         .project_description {
@@ -56,6 +58,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             font-weight: 400;
+            color: var(--color0);
         }
 
         .TheImageContainer {
@@ -72,7 +75,7 @@
                 border-radius: 1em;
 
                 &:hover {
-                    // box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
+                    box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
                     transform: scale(1.03);
                 }
 
@@ -85,6 +88,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: .8em;
             font-weight: 700;
+            color: var(--color0);
         }
     }
 

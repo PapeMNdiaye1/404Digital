@@ -28,6 +28,8 @@
             font-size: 2em;
             font-weight: 800;
             margin-bottom: .2em;
+            color: var(--color0);
+            margin-bottom: 1em;
         }
 
         .project_description {
@@ -35,6 +37,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2em;
             font-weight: 400;
+            color: var(--color0);
         }
 
         .TheImageContainer {
@@ -42,8 +45,6 @@
             height: auto;
             margin-bottom: 3em;
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
 
             img {
                 transition-duration: .3s;
@@ -51,6 +52,7 @@
                 border-radius: 1em;
 
                 &:hover {
+                    box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
                     transform: scale(1.03);
                 }
 
@@ -61,13 +63,6 @@
             width: 60vw;
             height: 45vw;
             margin-bottom: 3em;
-
-            iframe {
-                border: none;
-                border-radius: 1.5em;
-            }
-
-            margin-bottom: 3em;
         }
 
         p {
@@ -76,6 +71,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: .8em;
             font-weight: 700;
+            color: var(--color0);
         }
     }
 
@@ -149,12 +145,7 @@
             .the_video {
                 width: 90vw;
                 height: 57vw;
-                display: none;
-
-            }
-
-            h2 {
-                display: none;
+                background-color: salmon;
             }
 
             .project_description {

@@ -31,10 +31,11 @@
             opacity: 0;
             transition-duration: 1s, 0s;
             transition-property: opacity, background-position-y;
+            box-shadow: inset 0em -6em 150px #000;
 
             .slider_title {
                 width: 55%;
-                font-size: 5.5em;
+                font-size: 5em;
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
                 @include cent();
                 align-items: flex-start;
@@ -61,21 +62,22 @@
         }
 
         .slider:nth-child(1) {
-            background-image: url(./Images/Project/Exterior-0.jpg);
+            background-image: url(./Images/Project/Intro-1.jpg);
             z-index: 3;
             opacity: 1;
 
             .slider_title:nth-child(1) {
-                color: black;
+                color: var(--color0);
             }
 
             .slider_date {
-                color: black;
+                color: var(--color0);
             }
+
         }
 
         .slider:nth-child(2) {
-            background-image: url(./Images/Project/Villa_Teranga_Al_Amin-1.jpg);
+            background-image: url(./Images/Project/Intro-2.jpg);
 
             .slider_title:nth-child(1) {
                 color: #f1f1f1;
@@ -84,22 +86,25 @@
             .slider_date {
                 color: #f1f1f1;
             }
+
+
         }
 
         .slider:nth-child(3) {
-            background-image: url(./Images/Project/Villa_Teranga_Al_Amin-3.jpg);
+            background-image: url(./Images/Project/ProductA-1.jpg);
 
             .slider_title:nth-child(1) {
-                color: #f1f1f1;
+                color: #cfab8b;
             }
 
             .slider_date {
-                color: #f1f1f1;
+                color: #cfab8b;
             }
+
         }
 
         .slider:nth-child(4) {
-            background-image: url(./Images/Project/Pharmacie-3.jpg);
+            background-image: url(./Images/Project/Villa_Teranga_Al_Amin-1.jpg);
         }
 
         .slider_btn_container {
@@ -114,7 +119,7 @@
                 width: .6em;
                 height: .6em;
                 border-radius: 50%;
-                background-color: var(--colorX);
+                background-color: var(--color0);
                 margin: .5em;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
                 opacity: .3;
@@ -137,14 +142,18 @@
                 opacity: 1;
             }
         }
+
     }
 
     //!#####################################################################
+
+
     .archviz_presantation {
         height: 25em;
         width: 100%;
         @include cent();
         flex-wrap: wrap;
+        color: var(--color0);
 
         .qui_somme_nous {
             width: 80%;
@@ -194,15 +203,147 @@
 
     }
 
+
+    .intervention-area {
+        width: 100vw;
+        height: auto;
+        @include cent();
+
+        .the_link {
+            text-decoration: none;
+
+            .one-card {
+                width: 18em;
+                height: 36em;
+                margin: 2vw 5vw 10vw 5vw;
+                border: .15em var(--color0) solid;
+                border-radius: 1em;
+                overflow: hidden;
+                @include cent();
+                flex-wrap: wrap;
+                align-items: start;
+                transform: scale(1);
+                transition-duration: .3s;
+                filter: grayscale(100);
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.07);
+                    filter: grayscale(0);
+                }
+
+                p {
+                    width: 90%;
+                    font-family: 'Montserrat', sans-serif;
+                    color: var(--color0);
+                    text-align: center;
+                    font-size: .7em;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .card-cover {
+            width: 100%;
+            height: 65%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .card-cover-1 {
+            background-image: url('../Style/Images/Extra/automotive-showroom-7-1-2-1-768x536.jpg');
+        }
+
+        .card-cover-2 {
+            background-image: url('../Style/Images/Extra/bewooden-1.jpg');
+        }
+
+        .card-cover-3 {
+            background-image: url('../Style/Images/Extra/automotive-showroom-7-2.jpg');
+        }
+
+        .title-of-card {
+            color: var(--color0);
+            @include cent();
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3em;
+            font-weight: 900;
+        }
+
+    }
+
+    .software {
+        width: 100vw;
+        height: 5em;
+        margin: 10vw 0vw 10vw 0vw;
+        @include cent();
+
+        .unreal,
+        .blender,
+        .ds,
+        .oculus,
+        .meta,
+        .nvidia,
+        .apple,
+        .arch {
+            width: 4em;
+            height: 4em;
+            background-image: url('../Style/Images/SVG/unreal.png');
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0vw 1vw 0vw 1vw;
+        }
+
+        .unreal {
+            filter: invert(100);
+        }
+
+        .blender {
+            background-image: url('../Style/Images/SVG/blender.png');
+        }
+
+        .ds {
+            background-image: url('../Style/Images/SVG/3DS.png');
+        }
+
+        .oculus {
+            background-image: url('../Style/Images/SVG/Oculus.png');
+            width: 12em;
+        }
+
+        .meta {
+            background-image: url('../Style/Images/SVG/Meta.png');
+        }
+
+        .nvidia {
+            background-image: url('../Style/Images/SVG/Nvidia.png');
+        }
+
+        .apple {
+            background-image: url('../Style/Images/SVG/Apple.png');
+        }
+
+        .arch {
+            background-image: url('../Style/Images/SVG/Arch.png');
+            width: 10em;
+        }
+    }
+
     //!#####################################################################
     .AccueilBigProjectsSection {
         width: 100%;
         min-height: 50em;
+        flex-wrap: wrap;
 
         .One_Project_In_Home {
             min-height: 48em;
             display: grid;
             grid-gap: .5em;
+            margin-bottom: 1.5em;
+            border: .5em solid black;
 
             .image_container {
                 width: 100%;
@@ -211,10 +352,12 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
                 transition-duration: .4s;
-                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 1em;
+                background-size: 105%;
+                box-shadow: inset 0em -.51em 150px #000;
 
                 &:hover {
-                    background-size: 105%;
+                    background-size: 115%;
                 }
             }
 
@@ -255,13 +398,17 @@
 
                     .the_link {
                         margin-top: 1em;
-                        font-size: .71em;
+                        font-size: .81em;
                         text-decoration: none;
                         padding: .3em;
                         border-radius: .2em;
+                        box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
+                        border: .1em solid #86c5e5;
 
                         &:hover {
                             transform: scale(1.1);
+                            background-color: #86c5e5;
+                            box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
                         }
 
                         ion-icon {
@@ -295,11 +442,9 @@
             }
 
             .info_container {
-
                 grid-column: 1 / 1;
                 grid-row: 1 / 1;
             }
-
         }
 
         .left {
@@ -317,17 +462,15 @@
             }
         }
 
-
-
     }
-
 
     //!#####################################################################
     .galerie_presantation {
-        height: 15em;
+        height: 5em;
         width: 100%;
         @include cent();
         flex-wrap: wrap;
+        margin-bottom: 5em;
 
         .nos_réalisations {
             width: auto;
@@ -336,12 +479,15 @@
             font-weight: 700;
             font-size: .8em;
             text-decoration: none;
-            color: var(--colorX);
-            border: .1em solid #000;
+            color: var(--color0);
             border-radius: .3em;
+            box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
+            border: .1em solid #86c5e5;
 
             &:hover {
                 transform: scale(1.1);
+                background-color: #86c5e5;
+                box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
             }
 
             ion-icon {
@@ -351,7 +497,6 @@
 
         .galerie_container {
             width: 100%;
-            // background-color: skyblue;
             padding-left: 10vw;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -360,146 +505,215 @@
     }
 
     //!#####################################################################
-    .the_galerie_presantation_container {
-        width: 100%;
-        height: auto;
-        @include cent();
-        flex-wrap: wrap;
-        // background-color: aqua;
-        background-color: var(--colorX);
+    // .the_galerie_presantation_container {
+    //     width: 100%;
+    //     height: auto;
+    //     @include cent();
+    //     flex-wrap: wrap;
+    //     // background-color: aqua;
+    //     background-color: var(--colorX);
 
-        img {
-            width: 60%;
-            margin-top: 10em;
-        }
+    //     img {
+    //         width: 60%;
+    //         margin-top: 10em;
+    //     }
 
-        .the_title {
-            width: 60%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5em;
-            color: var(--colorX);
-            font-weight: 700;
-            margin: 1em 0em 0em 0em;
-        }
+    //     .the_title {
+    //         width: 60%;
+    //         font-family: 'Montserrat', sans-serif;
+    //         font-size: 1.5em;
+    //         color: var(--colorX);
+    //         font-weight: 700;
+    //         margin: 1em 0em 0em 0em;
+    //     }
 
-        .the_date {
-            width: 60%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1em;
-            color: var(--colorX);
-            font-weight: 100;
-            margin: 1em 0em 5em 0em;
-        }
-    }
+    //     .the_date {
+    //         width: 60%;
+    //         font-family: 'Montserrat', sans-serif;
+    //         font-size: 1em;
+    //         color: var(--colorX);
+    //         font-weight: 100;
+    //         margin: 1em 0em 5em 0em;
+    //     }
+    // }
 
     //!#####################################################################
-    .the_galerie_container {
-        width: 100%;
+    // .the_galerie_container {
+    //     width: 100%;
+    //     height: auto;
+    //     display: grid;
+    //     grid-template-columns: repeat(5, 1fr);
+    //     grid-template-rows: repeat(5, 1fr);
+
+    //     .one_galerie_element {
+    //         width: 100%;
+    //         @include cent();
+    //         display: grid;
+    //         grid-template-columns: 1fr;
+    //         grid-template-rows: 1fr;
+    //         overflow: hidden;
+
+    //         img {
+    //             grid-column: 1 / 1;
+    //             grid-row: 1 / 1;
+    //             transition-duration: 1s;
+    //         }
+
+    //         &:hover {
+    //             img {
+    //                 transform: scale(1.1);
+    //             }
+
+    //             .one_galerie_element_hover {
+    //                 height: 100%;
+    //                 background-color: rgba(255, 255, 255, 0.7);
+
+    //                 .iner_container {
+    //                     top: 0%;
+    //                 }
+    //             }
+    //         }
+
+    //         .one_galerie_element_hover {
+    //             grid-column: 1 / 1;
+    //             grid-row: 1 / 1;
+    //             width: 100%;
+    //             height: 0%;
+    //             overflow: hidden;
+    //             @include cent();
+    //             flex-wrap: wrap;
+    //             background-color: rgba(255, 255, 255, 0);
+    //             transition-duration: 0s, 1s;
+    //             transition-property: height, background-color;
+
+    //             .iner_container {
+    //                 width: 100%;
+    //                 height: auto;
+    //                 @include cent();
+    //                 flex-wrap: wrap;
+    //                 top: 6%;
+    //                 transition-duration: .3s;
+
+    //                 .Icon-to-click-on {
+    //                     width: 1.5em;
+    //                     height: 1.5em;
+    //                     border-radius: 50%;
+    //                     @include cent();
+    //                     font-size: 2.3em;
+    //                     color: var(--colorX);
+    //                     cursor: pointer;
+    //                     transform: scale(1);
+    //                     &:hover {
+    //                         transform: scale(1.2);
+    //                     }
+
+    //                     &:active {
+    //                         transform: scale(1);
+    //                     }
+
+    //                 }
+
+    //                 .titre {
+    //                     width: 95%;
+    //                     min-height: 1em;
+    //                     height: auto;
+    //                     @include cent();
+    //                     font-family: 'Montserrat', sans-serif;
+    //                     font-weight: 600;
+    //                     font-size: 1em;
+    //                     text-align: center;
+    //                     text-decoration: none;
+    //                     color: var(--colorX);
+
+    //                     &:hover {
+    //                         transform: scale(1.1);
+    //                     }
+    //                 }
+
+    //                 .date {
+    //                     width: 100%;
+    //                     height: 1em;
+    //                     @include cent();
+    //                     font-family: 'Montserrat', sans-serif;
+    //                     font-size: .7em;
+    //                     font-weight: 100;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    .equipe_presantation {
         height: auto;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        @include cent();
+        flex-wrap: wrap;
+        color: var(--color0);
 
-        .one_galerie_element {
-            width: calc(100% -.01em);
+        .equipe {
+            width: 80%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 1.8em;
+        }
+
+        .equipe_big_container {
+            width: 100%;
             @include cent();
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            overflow: hidden;
-            border: .01em solid var(--colorX);
+            flex-wrap: wrap;
 
-            img {
-                grid-column: 1 / 1;
-                grid-row: 1 / 1;
-                transition-duration: 1s;
-                transform: scale(1.1);
-            }
-
-            &:hover {
-                img {
-                    transform: scale(1.2);
-                }
-
-                .one_galerie_element_hover {
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.7);
-
-                    .iner_container {
-                        top: 0%;
-                    }
-                }
-            }
-
-            .one_galerie_element_hover {
-                grid-column: 1 / 1;
-                grid-row: 1 / 1;
-                width: 100%;
-                height: 0%;
-                overflow: hidden;
+            .members {
+                width: 15em;
+                height: auto;
+                margin: 3em;
                 @include cent();
                 flex-wrap: wrap;
-                background-color: rgba(255, 255, 255, 0);
-                transition-duration: 0s, 1s;
-                transition-property: height, background-color;
 
-                .iner_container {
+                .pic {
+                    width: 7em;
+                    height: 7em;
+                    background-image: url('./Images/Extra/Profil-3.jpg');
+                    background-size: 110%;
+                    border-radius: 50%;
+                    background-position: center;
+                    margin-bottom: 1em;
+                }
+
+                .pic1 {
+                    background-image: url('./Images/Extra/Profil-4.jpg');
+                }
+
+                .pic2 {
+                    background-image: url('./Images/Extra/Profil-2.jpg');
+                }
+
+                .pic4 {
+                    background-image: url('./Images/Extra/Profil-1.jpg');
+                }
+
+                em {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
+                    font-size: 1em;
                     width: 100%;
-                    height: auto;
-                    @include cent();
-                    flex-wrap: wrap;
-                    top: 6%;
-                    transition-duration: .3s;
+                    text-align: center;
+                }
 
-                    .Icon-to-click-on {
-                        width: 1.5em;
-                        height: 1.5em;
-                        border-radius: 50%;
-                        @include cent();
-                        font-size: 2.3em;
-                        color: var(--colorX);
-                        cursor: pointer;
-                        transform: scale(1);
+                p {
+                    text-align: center;
 
-                        &:hover {
-                            transform: scale(1.2);
-                        }
 
-                        &:active {
-                            transform: scale(1);
-                        }
-
-                    }
-
-                    .titre {
-                        width: 95%;
-                        min-height: 1em;
-                        height: auto;
-                        @include cent();
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 600;
-                        font-size: 1em;
-                        text-align: center;
-                        text-decoration: none;
-                        color: var(--colorX);
-
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                    }
-
-                    .date {
-                        width: 100%;
-                        height: 1em;
-                        @include cent();
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: .7em;
-                        font-weight: 100;
-                    }
+                    font-family: 'Montserrat',
+                        sans-serif;
+                    margin-top: 1em;
+                    font-size: .7em;
+                    font-weight: 200;
                 }
             }
         }
+
     }
+
 
     //!#####################################################################
 }
@@ -520,7 +734,7 @@
 
                 .slider_title {
                     width: 80%;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     margin-left: 0%;
                 }
 
@@ -531,17 +745,31 @@
                 }
 
             }
+
+            .slider:nth-child(1) {
+                background-image: url(./Images/Project/Intro-1.jpg);
+                background-position-x: 60%;
+
+                .slider_title:nth-child(1) {
+
+                    color: var(--color0);
+                    opacity: .9;
+                }
+            }
         }
+
 
         //!#####################################################################
         .archviz_presantation {
             .qui_somme_nous {
                 width: 100%;
                 @include cent();
+                font-size: 1.5em;
             }
 
             p {
                 width: 80%;
+                font-size: 1em;
             }
 
             .network_container {
@@ -550,24 +778,63 @@
 
         }
 
+
+        .intervention-area {
+            @include cent();
+            flex-wrap: wrap;
+
+            .one-card {
+                width: 80%;
+                height: 30em;
+
+                &:hover {
+                    transform: scale(1.03)
+                }
+            }
+
+            .card-cover {}
+
+            .card-cover-1 {}
+
+            .card-cover-2 {}
+
+            .card-cover-3 {}
+
+            .title-of-card {}
+
+        }
+
+
+        .software {
+            @include cent();
+            flex-wrap: wrap;
+            transform: scale(.8);
+            height: 15em;
+
+            .unreal,
+            .blender,
+            .ds,
+            .oculus,
+            .meta,
+            .nvidia {}
+        }
+
         //!#####################################################################
         .AccueilBigProjectsSection {
             width: 100%;
             min-height: auto;
 
             .One_Project_In_Home {
-                min-height: 28em;
+                min-height: 30em;
                 height: auto;
                 grid-gap: 0em;
-                padding-bottom: 12%;
 
                 .image_container {
                     width: 100%;
                     background-position: center;
                     background-size: 100%;
                     background-repeat: no-repeat;
-                    border-radius: 1em;
-                    background-color: rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.24);
 
                     &:hover {
                         background-size: 100%;
@@ -575,6 +842,8 @@
                 }
 
                 .info_container {
+
+
                     .title {
                         font-size: 1.3em;
                         width: 90%;
@@ -592,6 +861,8 @@
 
                         .the_link {
                             font-size: 1.2em;
+                            box-shadow: #86c5e5 0 0 5px, inset #86c5e5 0 0 5px;
+                            border: .1em solid #86c5e5;
                         }
                     }
                 }
@@ -644,27 +915,31 @@
 
         //!#####################################################################
         .the_galerie_container {
-
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(13, 1fr);
-            height: 95em;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(25, 1fr);
 
             .one_galerie_element {
-                @include cent();
-
-                img {
-                    transform: scale(1);
-
-                    &:hover {
-                        transform: scale(1);
-                    }
-                }
-
                 &:hover {
                     img {
                         transform: scale(1);
                     }
                 }
+            }
+        }
+
+        //!#####################################################################
+        .equipe_presantation {
+            text-align: center;
+
+            .equipe {
+                width: 100%;
+                @include cent();
+                font-size: 1.3em;
+            }
+
+            .equipe_big_container {
+
+                .members {}
             }
         }
     }

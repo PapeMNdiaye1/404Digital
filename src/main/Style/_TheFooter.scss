@@ -21,11 +21,12 @@
            width: 5em;
            height: 5.5em;
            margin-left: 10%;
-           background-image: url('./Images/SVG/Asset\ 6.svg');
+           //    background-image: url('./Images/SVG/Asset\ 6.svg');
            background-position: center;
            background-repeat: no-repeat;
            background-size: 90%;
            filter: invert(100%);
+           transform: scale(2);
        }
 
        .archviz_description {
@@ -120,21 +121,12 @@
 
        .contact_elemant_container {
            grid-column: 3 / 3;
-           grid-row: 3 / 6;
+           grid-row: 3 / 5;
            margin-left: 20%;
            @include cent();
            justify-content: flex-start;
            align-items: flex-start;
            flex-direction: column;
-
-           .contact_elemant {
-               height: calc(100% * 2);
-               @include cent();
-               justify-content: flex-start;
-               align-items: flex-end;
-               font-size: .7em;
-               color: rgb(104, 104, 104);
-           }
 
            .contact_elemant {
                height: calc(100% * 2);
@@ -154,10 +146,9 @@
            flex-direction: row;
            color: var(--colorX);
            grid-column: 3;
-           grid-row: 6 / 11;
+           grid-row: 5 / 9;
            margin-left: 20%;
            flex-direction: column;
-
 
            a {
                height: calc(100% / 4);
@@ -285,17 +276,17 @@
 
            .categories_elemant_container {
                margin-left: 4vh;
-               grid-column: 1 / 5;
+               grid-column: 1 / 4;
                grid-row: 9 / 15;
                font-size: 1.2em;
            }
 
            .contact_elemant_container {
-               grid-column: 1 / 5;
-               grid-row: 17 / 20;
+               grid-column: 1 / 3;
+               grid-row: 17 / 19;
                margin-left: 4vh;
                font-size: 1.2em;
-               //    background-color: aqua;
+
            }
 
            .network_container {
@@ -306,8 +297,6 @@
                grid-row: 20 / 22;
                margin-left: 0%;
                flex-direction: row;
-
-               //    background-color: aqua;
            }
 
            .the_line {
