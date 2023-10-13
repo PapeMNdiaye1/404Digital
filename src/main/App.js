@@ -50,7 +50,7 @@ function App() {
   const changeTab = (newTab, link) => {
     console.log(newTab, link);
     let TheFooter = document.querySelector(".the_footer")
-    TheFooter.style.opacity = '0';
+    // TheFooter.style.opacity = '0';
   }
 
   const GetImage = (theimage, title, date, link) => {
