@@ -75,18 +75,18 @@ function Touba({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 1' />
                     </div>
-                    {/* <h1 className='project_title'>
+                    <h1 className='project_title'>
                         Création
-                    </h1> */}
-                    {/* <div className='the_video'>
+                    </h1>
+                    <div className='the_video'>
                         <iframe width="100%" height="100%"
                             src="https://www.youtube.com/embed/uSlNYZqbRIQ"
                             title="Touba"
                             frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
                         </iframe>
-                    </div> */}
+                    </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 2' />
                     </div>

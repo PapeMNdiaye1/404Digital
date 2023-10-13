@@ -1,5 +1,7 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
+
+
 import ImageProjectC1 from '../../Style/Images/Project/Villa_B-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Villa_B-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Villa_B-3.jpg';
@@ -65,7 +67,7 @@ function SmallHouse1({ }) {
                         Villa Saly
                     </h1>
                     <h3 className='project_description'>
-                        par Bokar Ndiaye | 06 Juin, 2023 |
+                        | 06 Juin, 2023 |
                     </h3>
                     <p>
                         Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.                                          </p>
@@ -73,20 +75,14 @@ function SmallHouse1({ }) {
                         Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage}
-                            src={ImageProjectC2}
-                            width='100%'
-                            loading='lazy' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC1} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC4} width='47%' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage}
-                            src={ImageProjectC3}
-                            width='100%'
-                            loading='lazy' />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' />
                     </div>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC5} width='47%' />

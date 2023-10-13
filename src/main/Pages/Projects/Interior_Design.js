@@ -74,7 +74,7 @@ function Interior1({ }) {
                         Interior Decoration
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momar Ndiaye | 3 Juin, 2022 |
+                        | 3 Juin, 2022 |
                     </h3>
                     <p>
                         À l'aide des logiciels de dernière génération et de notre savoir-faire dans le domaine de l’architecture d’intérieur, nous vous aidons dans l’aménagement de vos espaces. Du design moderne au traditionnelle, minimaliste etc. nous modélisons espaces, mobiliers et décors intérieurs afin de vous assurer de toute la commodité et de l’esthétique qu’auront vos projets avant leur réalisation.
@@ -93,8 +93,8 @@ function Interior1({ }) {
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='Interior Decoration - 3' />
                     </div>
-                    <h2 className='project_title'>
-                        Animation                    </h2>
+                    <h1 className='project_title'>
+                        Animation                    </h1>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
@@ -105,11 +105,11 @@ function Interior1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowFullScreen>
+                            allowfullscreen>
 
                         </iframe>
                     </div>
-                    {/* <h1 className='project_title'>
+                    <h1 className='project_title'>
                         Création
                     </h1>
                     <div className='the_video the_video_2 '>
@@ -121,13 +121,13 @@ function Interior1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowFullScreen>
+                            allowfullscreen>
                         </iframe>
-                    </div> */}
+                    </div>
 
-                    <h3 className='project_title'>
+                    <h1 className='project_title'>
                         Clay Renders
-                    </h3>
+                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='Interior Decoration - 4' />
                         <img onClick={displayImage} src={ImageProjectC7} width='47%' alt='Interior Decoration - 5' />

@@ -64,12 +64,9 @@ function MSAD({ }) {
                         Manufacture des Arts Décoratifs de Thiés
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momar Ndiaye | Juin 09, 2022 |
+                        | 09 Juin, 2022 |
                     </h3>
-                    <p>
-                        Expériences de réalité virtuelle réalisées pour la M.S.A.D de Thiès. <br />Nous pouvons vous aider à améliorer vos ventes avec cette technique en constante évolution.
-                    </p>
-
+                    <p>Expériences de réalité virtuelle réalisées pour la M.S.A.D de Thiès. La réalité Augmentée favorise l'implication des visiteurs et leur offre une expérience inoubliable. Le contenu de réalité augmentée peut ajouter de la valeur à n'importe quel musée ou art, offrant plusieurs solutions interactives qui offrent différentes façons de divertir les gens et de créer des opportunités d'engagement enrichissantes. Le moyen le plus simple consiste à utiliser la RA pour ajouter des explications à ce que les visiteurs observent.</p>
                     <a className='the_links' href='https://papemndiaye1.github.io/MSAT-WebSite/' target="_blank">
                         Experience VR/AR <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>

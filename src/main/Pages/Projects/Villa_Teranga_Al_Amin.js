@@ -60,7 +60,7 @@ function SmallHouse1({ }) {
                         Villa Al Amin
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momar Ndiaye | 26 Janvier, 2023 |
+                        | 26 Janvier, 2023 |
                     </h3>
                     <p>
                         Les visites virtuelles offrent de nombreux avantages pour les acheteurs, propriétaires et agents immobiliers. Pour les acheteurs, elles permettent de visualiser les propriétés sans se déplacer. Pour les agents immobiliers, elles peuvent diffuser les propriétés à plus de gens, ce qui peut conduire à une vente plus rapide. Les visites virtuelles sont une solution pratique pour toutes les parties impliquées dans le processus immobilier.
@@ -75,9 +75,9 @@ function SmallHouse1({ }) {
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC3} width='47%' />
                     </div>
-                    <h2 className='project_title'>
+                    <h1 className='project_title'>
                         Création
-                    </h2>
+                    </h1>
                     <div className='the_video'>
                         <iframe width="100%"
                             height="100%"
@@ -87,16 +87,16 @@ function SmallHouse1({ }) {
                             autoplay; clipboard-write;
                             encrypted-media; gyroscope;
                             picture-in-picture"
-                            allowFullScreen>
+                            allowfullscreen>
 
                         </iframe>
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
-                    </div>
-                    <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC5} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC6} width='47%' />
+                    </div>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
                 </div>
             </div>

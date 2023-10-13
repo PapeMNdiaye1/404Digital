@@ -1,13 +1,14 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
-
-import ImageProjectC2 from '../../Style/Images/Project/Pharmacie_C-2.jpg';
-import ImageProjectC1 from '../../Style/Images/Project/Pharmacie_C-1.jpg';
-import ImageProjectC3 from '../../Style/Images/Project/Pharmacie_C-3.jpg';
-import ImageProjectC4 from '../../Style/Images/Project/Pharmacie_C-4.jpg';
-import ImageProjectC5 from '../../Style/Images/Project/Pharmacie_C-5.jpg';
-
-
+import ImageProjectC1 from '../../Style/Images/Project/ProductA-1.jpg';
+import ImageProjectC2 from '../../Style/Images/Project/ProductA-2.jpg';
+import ImageProjectC3 from '../../Style/Images/Project/ProductA-3.jpg';
+import ImageProjectC4 from '../../Style/Images/Project/ProductA-4.jpg';
+import ImageProjectC5 from '../../Style/Images/Project/ProductA-5.jpg';
+import ImageProjectC6 from '../../Style/Images/Project/ProductA-6.jpg';
+import ImageProjectC7 from '../../Style/Images/Project/ProductA-7.jpg';
+// import ImageProjectC8 from '../../Style/Images/Project/ProductA-8.jpg';
+// import ImageProjectC9 from '../../Style/Images/Project/ProductA-9.jpg';
 
 function Pharmacie1({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
@@ -27,7 +28,6 @@ function Pharmacie1({ }) {
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
-
 
         return () => {
             Page_slider.style.opacity = `1`
@@ -56,29 +56,38 @@ function Pharmacie1({ }) {
                     </div>
                 </div>
             }
-            <div className='Pharmacie_3_container'>
+
+            <div className='Pharmacie_1_container'>
+
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Espace Sportif
+                        Visualisations De Produits Produit De Beauté
                     </h1>
                     <h3 className='project_description'>
-                        par Pape M Ndiaye | 7 Mai, 2023 |
+                        | 27 Mai, 2022 |
                     </h3>
                     <p>
-                        Nous avons une grande expérience dans l'agencement d'espace commune.                                                                </p>
+                        Mise en avant de produit à travers des supports modernes. branding , Pub , Animations...
+                    </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='  Pharmacie Design - 2' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt='  Pharmacie Design - 2' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='47%' alt='  Pharmacie Design - 3' loading="lazy" />
-                        <img onClick={displayImage} src={ImageProjectC3} width='47%' alt='  Pharmacie Design - 4' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC5} width='47%' alt='  Pharmacie Design - 1' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='47%' alt='  Pharmacie Design - 3' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='  Pharmacie Design - 5' loading="lazy" />
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='  Pharmacie Design - 4' />
                     </div>
-                    {/* <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC5} width='100%' alt='  Pharmacie Design - 1' />
-                    </div> */}
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='  Pharmacie Design - 5' />
+                    </div>
+                    <h1 className='project_title'>
+                        Clay Renders
+                    </h1>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC7} width='100%' alt='  Pharmacie Design - 7' />
+                    </div>
                 </div>
             </div>
         </Fragment>

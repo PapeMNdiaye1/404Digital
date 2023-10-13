@@ -7,6 +7,7 @@ import ImageProjectC1 from '../../Style/Images/Project/Exterior-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Exterior-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Exterior-3.jpg';
 import ImageProjectC4 from '../../Style/Images/Project/Exterior-4.jpg';
+import ImageProjectC5 from '../../Style/Images/Project/Exterior-5.jpg';
 
 
 
@@ -69,7 +70,7 @@ function SmallHouse1({ }) {
                         Design de Maison Moderne
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momar Ndiaye | Juin 6, 2022 |
+                        | 6 Juin, 2022 |
                     </h3>
                     <p>
                         Des designs Modernes, épurés, minimalistes etc.… nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives.                    </p>
@@ -80,15 +81,15 @@ function SmallHouse1({ }) {
                         <img onClick={displayImage} src={ImageProjectC2} width='47%' />
                         <img onClick={displayImage} src={ImageProjectC3} width='47%' />
                     </div>
-                    <h3 className='project_title'>
+                    <h1 className='project_title'>
                         Clay Renders
-                    </h3>
+                    </h1>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC4} width='100%' />
                     </div>
-                    {/* <div className='TheImageContainer'>
+                    <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC5} width='100%' />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </Fragment>
