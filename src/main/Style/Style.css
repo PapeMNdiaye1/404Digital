@@ -768,6 +768,8 @@
     grid-row: 17 / 19;
     margin-left: 4vh;
     font-size: 1.2em;
+    -webkit-transform: translateY(3);
+            transform: translateY(3);
   }
   .App .App_container .the_footer .network_container {
     font-size: 1em;
@@ -1313,6 +1315,8 @@
     grid-row: 17 / 19;
     margin-left: 4vh;
     font-size: 1.2em;
+    -webkit-transform: translateY(3);
+            transform: translateY(3);
   }
   .the_footer .network_container {
     font-size: 1em;
