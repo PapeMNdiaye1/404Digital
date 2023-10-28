@@ -76,7 +76,7 @@ function TopBare({ onChangeTab }) {
                 <nav className='Menu-container'>
                     <OneSection parentCallback={callback} link={'/'} title={'ACCUEIL'} />
                     <OneSection parentCallback={callback} link={'/Travaux'} title={'TRAVAUX'} />
-                    <OneSection parentCallback={callback} link={'/Gallery'} title={'ARTICLES'} />
+                    <OneSection parentCallback={callback} link={'/Articles'} title={'ARTICLES'} />
                     <OneSection parentCallback={callback} link={'/Services'} title={'SERVICES'} />
                     <OneSection parentCallback={callback} link={'/Contact'} title={'CONTACT'} />
                 </nav>

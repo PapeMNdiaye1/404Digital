@@ -87,9 +87,9 @@ function App() {
             />
             <Route exact path="/Travaux" element={<Travaux />} />
             <Route exact path="/Services" element={<Service />} />
-            <Route exact path="/Contact" element={<Suspense fallback={<TheLoader />}><Contact /></Suspense>} />
-            <Route exact path="/ARTICLES" element={<Articles
+            <Route exact path="/Articles" element={<Articles
             />} />
+            <Route exact path="/Contact" element={<Suspense fallback={<TheLoader />}><Contact /></Suspense>} />
             {/* !############################################## */}
             <Route exact path="/Interior1" element={<Suspense fallback={<TheLoader />}><Interior1 /></Suspense>} />
             <Route exact path="/SmallHouse1" element={<Suspense fallback={<TheLoader />}><SmallHouse1 /></Suspense>} />

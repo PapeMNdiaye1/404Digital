@@ -12,8 +12,9 @@ import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
 import ImageProjectI2 from '../Style/Images/Project/Villa_B-2.jpg';
 import ImageProjectM1 from '../Style/Images/Project/ProductA-1.jpg';
-import ImageProject_3 from '../Style/Images/Infos/Event-2.jpg';
+import ImageProject_3 from '../Style/Images/Infos/Event-29.jpg';
 import ImageProject_4 from '../Style/Images/Infos/Event-12.jpg';
+
 
 function Accueil({ GetImageToApp }) {
 
@@ -198,9 +199,9 @@ function Accueil({ GetImageToApp }) {
                     description={"404 digital et Yord studio (République Tchèque) a collaboré afin de numériser la salle d’exposition des manufactures Sénégalaises des arts Décoratifs de Thiès."}
                     color={'#000'} textcolor={'#f1f1f1'} theKey={1} The_Experience={false} The_Experience_Link={'https://villa-r-1.netlify.app/'} link={'/MSDAD-de-THIES'} side={'right'} />
 
-                <OneBigProject title={'FORAFRICC 2023'} image={ImageProject_3}
-                    description={`Dans le cadre du FORAFRICC organisé par la Fondation Youssou Ndour pour les industries culturelles et créatives, le pôle EUNIC Sénégal organisera un panel avec : 404 Digital`}
-                    color={'#000'} textcolor={'#f1f1f1'} theKey={1} The_Experience={false} The_Experience_Link={'https://villa-r-1.netlify.app/'} link={'/FORAFRICC_2023'} side={'left'} />
+                <OneBigProject title={'Fix Challenge 2023'} image={ImageProject_3}
+                    description={"Lauréat de la compétition Fix Challenge 2023 ! La notre start-up et remporte le 3e prix, démontrant Son Excellence et son innovation dans le domaine de la technique. Nous sommes honorés d'avoir été reconnus par le réseau Free Sénégal pour notre travail et notre dévouement. Cette victoire marque un jalon important dans notre parcours et nous motive à continuer à repousser les limites de l'innovation numérique."}
+                    color={'#000'} textcolor={'#f1f1f1'} theKey={2} The_Experience={false} The_Experience_Link={'https://villa-r-1.netlify.app/'} link={'/Articles_4'} side={'left'} />
 
             </section>
 

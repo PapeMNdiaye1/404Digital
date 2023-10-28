@@ -650,9 +650,17 @@
             }
 
             .sliders:nth-child(1) {
-                background-position-x: 60%;
+
+                // background-position-x: 60%;
+                img {
+                    // object-fit: cover;
+                    // left: -23%;
+                    // background-position-x: 60%;
+
+                }
 
                 .sliders_inner_container {
+
                     .slider_title:nth-child(1) {
                         color: var(--color0);
                         opacity: .9;
