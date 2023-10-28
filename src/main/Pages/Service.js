@@ -9,7 +9,6 @@ import ImageProjectC7 from '../Style/Images/Project/Interior-1-2.jpg';
 import ImageProjectD1 from '../Style/Images/Project/NFT-1.jpg';
 // import ImageProjectE7 from '../Style/Images/Project/Pharmacie-3.jpg';
 import ImageProjectF2 from '../Style/Images/Project/Hangar-2.jpg';
-import ImageProjectG2 from '../Style/Images/Project/MSAD_2.jpg';
 import ImageProjectL1 from '../Style/Images/Project/Villa_Teranga_Al_Amin-1.jpg';
 import ImageProjectJ1 from '../Style/Images/Project/Villa_B-2.jpg';
 
@@ -96,7 +95,6 @@ function Services() {
                 TheGalerieElements={
                     <div className='project_container'>
                         <OneGalerieElement image={ImageProjectJ1} title={'Villa Saly'} link={'/Villa-Saly'} date={'06 Juin, 2023'} />
-                        <OneGalerieElement image={ImageProjectG2} title={'Manufacture des Arts Décoratifs de Thiés'} link={'/MSAD'} date={'03 Septembre, 2022'} />
                         <OneGalerieElement image={ImageProjectL1} title={'Villa Al Amin'} link={'/VillaTerangaAlAmin'} date={'26 Janvier, 2023'} />
                     </div>
                 } color={'#000'}
