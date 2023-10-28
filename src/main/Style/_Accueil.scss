@@ -603,8 +603,16 @@
 @media all and (max-width: 1000px) {
     #Accueil {
         .Accueil_Slider-2 {
-            height: auto;
+            // height: auto;
             overflow: hidden;
+            height: 60vh;
+            background-color: #86c5e5;
+
+            .control-dots {
+                .dot {
+                    transform: scale(1.3);
+                }
+            }
 
             .sliders {
                 background-size: 100%;
@@ -612,8 +620,17 @@
                 background-position-x: 30%;
                 transition-duration: 0s, 0s;
                 transition-property: opacity, background-position-y;
+                background-color: #cfab8b;
+                height: 65vh;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                }
 
                 .sliders_inner_container {
+                    height: 100%;
+                    overflow: hidden;
 
 
                     .slider_title {
@@ -633,12 +650,9 @@
             }
 
             .sliders:nth-child(1) {
-                background-image: url(./Images/Project/Intro-1.jpg);
                 background-position-x: 60%;
 
                 .sliders_inner_container {
-
-
                     .slider_title:nth-child(1) {
                         color: var(--color0);
                         opacity: .9;
@@ -646,7 +660,6 @@
                 }
             }
         }
-
 
         //!#####################################################################
         .archviz_presantation {
