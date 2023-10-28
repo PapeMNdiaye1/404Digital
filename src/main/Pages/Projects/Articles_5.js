@@ -1,46 +1,39 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
 
+import ImageProjectC1 from '../../Style/Images/Infos/Event-32.jpg';
+import ImageProjectC2 from '../../Style/Images/Infos/Event-33.jpg';
+import ImageProjectC3 from '../../Style/Images/Infos/Event-34.jpg';
+import ImageProjectC4 from '../../Style/Images/Infos/Event-35.jpg';
+// import ImageProjectC5 from '../../Style/Images/Infos/Event-36.jpg';
+import ImageProjectC6 from '../../Style/Images/Infos/Event-37.jpg';
+import ImageProjectC7 from '../../Style/Images/Infos/Event-38.jpg';
+import ImageProjectC8 from '../../Style/Images/Infos/Event-39.jpg';
 
 
-import ImageProjectC1 from '../../Style/Images/Project/NFT-1.jpg';
-import ImageProjectC2 from '../../Style/Images/Project/NFT-2.jpg';
-import ImageProjectC3 from '../../Style/Images/Project/NFT-3.jpg';
 
-
-
-
-
-function Touba({ }) {
+function Pharmacie1({ }) {
     const [TheImageContainer, setTheImageContainer] = useState(false);
     const [TheImageInTheContainer, setTheImageInTheContainer] = useState(ImageProjectC1);
 
     useEffect(() => {
         let ToDisplayonBLoade = document.querySelector(".before-loader")
         ToDisplayonBLoade.style.display = 'none';
-
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.opacity = `0`
-
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
-
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
-
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
-
-
         return () => {
             Page_slider.style.opacity = `1`
             ToDisplayonBLoade.style.display = 'flex';
             AccueilContainer.scrollTop = 0;
-
         }
     }, []);
-
     const displayImage = (e) => {
         if (TheImageContainer) {
             setTheImageContainer(false);
@@ -49,7 +42,6 @@ function Touba({ }) {
             setTheImageContainer(true);
         }
     }
-
     return (
         <Fragment>
             {TheImageContainer &&
@@ -63,47 +55,41 @@ function Touba({ }) {
                     </div>
                 </div>
             }
-
-            <div className='Touba_1_container'>
-
+            <div className='Article_5'>
                 <div className='project_display'>
                     <h1 className='project_title'>
-                        Maquette de la Grande Mosquée de Touba
+                        DAKAR, CZECH IT OUT 2023
                     </h1>
                     <h3 className='project_description'>
-                        par Pape Momar Ndiaye | 09 Mars, 2022 |
+                        | 17 Octobre , 2023 |
                     </h3>
                     <p>
-                        Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.
+                        "Renforcer les liens numériques ! 🤝🌐 404 Digital s'est associé à l'Ambassadeur de la République tchèque et à l'Ambassadeur de l'Union européenne, renforçant ainsi la collaboration entre nos pays dans le domaine numérique.
                     </p>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC1} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 1' />
-                    </div>
-                    <h1 className='project_title'>
-                        Création
-                    </h1>
-                    <div className='the_video'>
-                        <iframe width="100%" height="100%"
-                            src="https://www.youtube.com/embed/uSlNYZqbRIQ"
-                            title="Touba"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-
-                        </iframe>
+                        <img onClick={displayImage} src={ImageProjectC4} width='100%' alt='  Pharmacie Design - 5' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC2} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 2' />
+                        <img onClick={displayImage} src={ImageProjectC7} width='47%' alt='  Pharmacie Design - 1' />
+                        <img onClick={displayImage} src={ImageProjectC6} width='47%' alt='  Pharmacie Design - 3' />
                     </div>
                     <div className='TheImageContainer'>
-                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt=' Maquette de la Grande Mosquée de Touba - 3' />
+                        <img onClick={displayImage} src={ImageProjectC8} width='100%' alt='  Pharmacie Design - 1' />
+                    </div>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC1} width='47%' alt='  Pharmacie Design - 5' />
+                        <img onClick={displayImage} src={ImageProjectC2} width='47%' alt='  Pharmacie Design - 3' />
+                    </div>
+                    <div className='TheImageContainer'>
+                        <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='  Pharmacie Design - 4' />
                     </div>
                 </div>
             </div>
-        </Fragment >
+        </Fragment>
     );
 }
 
 
 
 
-export default Touba;
+export default Pharmacie1;

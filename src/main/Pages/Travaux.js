@@ -23,6 +23,9 @@ import ImageProjectB1 from '../Style/Images/Project/City-1.jpg';
 function Travaux() {
 
     useEffect(() => {
+        console.log('opp Travaux');
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
+        ToDisplayonBLoade.style.display = 'none';
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-100%`
@@ -33,14 +36,19 @@ function Travaux() {
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
 
+
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
 
         return () => {
-
-        }
+            ToDisplayonBLoade.style.display = 'flex';
+            console.log(ToDisplayonBLoade);
+            AccueilContainer.scrollTop = 0;
+        };
     }, []);
 
 
@@ -60,9 +68,9 @@ function Travaux() {
                     description={"Des designs Modernes, épurés, etc…. nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs. Pour se faire nous utilisons différents logiciels avec les dernières innovations pour des rendus d’images à la fois réalistes et immersives."}
                     color={'#000'} textcolor={'#f1f1f1'} theKey={1} The_Experience={true} The_Experience_Link={'https://villa-r-1.netlify.app/'} link={'/Villa-Saly'} side={'left'} />
 
-                <OneBigProject title={'Expériences de réalité virtuelle'} image={ImageProjectG1}
-                    description={"Expériences de réalité virtuelle réalisées pour la M.S.A.D de Thiès. La réalité Augmentée favorise l'implication des visiteurs et leur offre une expérience inoubliable..."}
-                    color={'#000'} textcolor={'#f1f1f1'} theKey={2} link={'/MSAD'} side={'right'} The_Experience={true} The_Experience_Link={'https://papemndiaye1.github.io/MSAT-WebSite/'} />
+                <OneBigProject title={'Cité El Hadj Amadou BA'} image={ImageProjectB1}
+                    description={"Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."}
+                    color={'#000'} textcolor={'#f1f1f1'} theKey={2} link={'/City1'} side={'right'} The_Experience={false} />
 
                 <OneBigProject title={'Visualisation de projets immobiliers'} image={ImageProjectL1}
                     description={"Les visites virtuelles offrent de nombreux avantages pour les acheteurs, propriétaires et agents immobiliers. Pour les acheteurs, elles permettent de visualiser les propriétés sans se déplacer. Pour les agents immobiliers, elles peuvent diffuser les propriétés à plus de gens, ce qui peut conduire à une vente plus rapide. Les visites virtuelles sont une solution pratique pour toutes les parties impliquées dans le processus immobilier."}
@@ -93,9 +101,6 @@ function Travaux() {
                     description={'Sur la base du matériel de briefing, nous créons des rendus ou croquis pour chaque image commandée.'}
                     color={'#000'} textcolor={'#f1f1f1'} theKey={9} link={'/Touba'} side={'left'} The_Experience={false} />
 
-                <OneBigProject title={'Cité El Hadj Amadou BA'} image={ImageProjectB1}
-                    description={"Ce projet comprend des villas familiales, des bâtiments commerciaux et résidentiels ainsi que des lieux publics. Notre travail se partage à parts égales entre les animations architecturales et les rendus 3D. Nous mettons en œuvre différentes approches pour une optimisation de vos espaces extérieurs et intérieurs."}
-                    color={'#000'} textcolor={'#f1f1f1'} theKey={10} link={'/City1'} side={'right'} The_Experience={false} />
 
             </section>
         </div>

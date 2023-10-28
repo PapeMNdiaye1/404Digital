@@ -33,6 +33,7 @@
             transition-property: opacity, background-position-y;
             box-shadow: inset 0em -6em 150px #000;
 
+
             .slider_title {
                 width: 55%;
                 font-size: 5em;
@@ -339,7 +340,7 @@
         flex-wrap: wrap;
 
         .One_Project_In_Home {
-            min-height: 48em;
+            min-height: 55em;
             display: grid;
             grid-gap: .5em;
             margin-bottom: 1.5em;

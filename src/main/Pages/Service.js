@@ -22,9 +22,11 @@ import ImageProjectN1 from '../Style/Images/Project/ProductB-1.jpg';
 function Services() {
 
     useEffect(() => {
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
+        ToDisplayonBLoade.style.display = 'none';
+
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-300%`
-
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -32,14 +34,19 @@ function Services() {
         let hoverLoaderContainer = document.querySelector(".hover_loader_container")
         hoverLoaderContainer.style.display = 'flex';
 
+
         setTimeout(function () {
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
 
         return () => {
-
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
         }
+
     }, []);
 
     return (

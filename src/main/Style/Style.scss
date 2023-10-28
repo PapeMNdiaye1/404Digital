@@ -11,8 +11,6 @@
   -webkit-tap-highlight-color: transparent;
   outline: none;
 
-
-
   &::selection {
     color: var(--colorX);
     background: var(--color0);
@@ -43,88 +41,6 @@
     -webkit-tap-highlight-color: transparent;
     outline: none;
 
-
-    .hover_loader_container {
-      width: 100%;
-      height: 100%;
-      background-color: var(--colorX);
-      position: fixed;
-      z-index: 2;
-      @include cent();
-      display: none;
-
-      .hover_loader {
-        top: -4em;
-
-        .lds-ellipsis {
-          display: inline-block;
-          position: relative;
-          width: 80px;
-          height: 80px;
-        }
-
-        .lds-ellipsis div {
-          position: absolute;
-          top: 33px;
-          width: 13px;
-          height: 13px;
-          border-radius: 50%;
-          background: var(--color0);
-          animation-timing-function: cubic-bezier(0, 1, 1, 0);
-        }
-
-        .lds-ellipsis div:nth-child(1) {
-          left: 8px;
-          animation: lds-ellipsis1 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(2) {
-          left: 8px;
-          animation: lds-ellipsis2 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(3) {
-          left: 32px;
-          animation: lds-ellipsis2 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(4) {
-          left: 56px;
-          animation: lds-ellipsis3 0.6s infinite;
-        }
-
-        @keyframes lds-ellipsis1 {
-          0% {
-            transform: scale(0);
-          }
-
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        @keyframes lds-ellipsis3 {
-          0% {
-            transform: scale(1);
-          }
-
-          100% {
-            transform: scale(0);
-          }
-        }
-
-        @keyframes lds-ellipsis2 {
-          0% {
-            transform: translate(0, 0);
-          }
-
-          100% {
-            transform: translate(24px, 0);
-          }
-        }
-
-      }
-    }
 
     .display_image_container {
       position: fixed;
@@ -224,12 +140,105 @@
       }
     }
 
+    .before-loader {
+      width: 100%;
+      height: 100%;
+      background-color: var(--colorX);
+      position: fixed;
+      z-index: 2;
+      @include cent();
+      display: none;
+
+    }
+
+    .hover_loader_container {
+      width: 100%;
+      height: 100%;
+      background-color: var(--colorX);
+      position: fixed;
+      z-index: 2;
+      @include cent();
+      display: none;
+    }
+
+    .hover_loader {
+      top: -4em;
+
+      .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+
+      .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: var(--color0);
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+
+      .lds-ellipsis div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+
+      @keyframes lds-ellipsis1 {
+        0% {
+          transform: scale(0);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes lds-ellipsis3 {
+        0% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(0);
+        }
+      }
+
+      @keyframes lds-ellipsis2 {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        100% {
+          transform: translate(24px, 0);
+        }
+      }
+
+    }
+
     @import "./TheFooter";
 
   }
 }
 
-@import "./TheFooter";
+// @import "./TheFooter";
 
 // ################################################
 
@@ -262,6 +271,8 @@
 @import "./Article_3";
 // ################################################
 @import "./Article_4";
+// ################################################
+@import "./Article_5";
 // ################################################
 @import "./Cité_1";
 // ################################################

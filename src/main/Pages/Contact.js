@@ -3,9 +3,12 @@ import { React, useEffect, } from 'react';
 function Contacts() {
 
     useEffect(() => {
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
+        ToDisplayonBLoade.style.display = 'none';
 
         let Page_slider = document.querySelector('.page_title_slider')
         Page_slider.style.top = `-400%`
+
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -17,7 +20,15 @@ function Contacts() {
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
+
+
+
         return () => {
+
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
 
         }
     }, []);

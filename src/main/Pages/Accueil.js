@@ -11,7 +11,11 @@ import ImageProject_4 from '../Style/Images/Infos/Event-12.jpg';
 
 function Accueil({ GetImageToApp }) {
 
+
     useEffect(() => {
+
+        let ToDisplayonBLoade = document.querySelector(".before-loader")
+        ToDisplayonBLoade.style.display = 'none';
 
         let AccueilContainer = document.querySelector(".App_container")
         AccueilContainer.scrollTop = 0;
@@ -26,23 +30,15 @@ function Accueil({ GetImageToApp }) {
             hoverLoaderContainer.style.display = '';
         }, 1500);
 
+        let TheFooter = document.querySelector(".the_footer")
+        TheFooter.style.opacity = '1';
+
         let ThesliderImg = document.querySelectorAll(".slider")
         let thePageWidth = window.innerWidth
-
-        if (thePageWidth >= 1000) {
-            return AccueilContainer.addEventListener('scroll', (event) => {
-                let TheScrollTop = AccueilContainer.scrollTop;
-                let TheScrollHeight = AccueilContainer.scrollHeight;
-                let WindowInnerHeight = window.innerHeight;
-                let TheScrollTopInP = (TheScrollTop / (TheScrollHeight - WindowInnerHeight)) * 100;
-
-                ThesliderImg.forEach(element => {
-                    element.style.backgroundPositionY = `-${TheScrollTopInP * 10}%`;
-                });
-            })
-        }
         return () => {
-        }
+            ToDisplayonBLoade.style.display = 'flex';
+            AccueilContainer.scrollTop = 0;
+        };
     }, []);
 
     const GetImageOnApp = (theimage, title, date, link) => {
@@ -156,7 +152,7 @@ function Accueil({ GetImageToApp }) {
 
             <section className='galerie_presantation'>
                 <Link className='nos_réalisations' to={'./Articles'}>
-                    Nos Article  <ion-icon name="arrow-forward-outline"></ion-icon>
+                    Nos Articles  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </Link>
             </section>
 
@@ -263,7 +259,6 @@ function AccueilSlider() {
             });
             AllSlider[theSliderKey - 1].style.zIndex = '4'
         }, 6100);
-
     }
 
     useEffect(() => {
@@ -281,7 +276,6 @@ function AccueilSlider() {
             sliderBtnContainer.innerHTML = '';
         }
     }, [])
-
     const CreateSliderBtn = (theSlider) => {
         let sliderBtnContainer = document.querySelector(".slider_btn_container")
         let OneDot = document.createElement("div")
@@ -289,10 +283,9 @@ function AccueilSlider() {
         OneDot.setAttribute("theSlider", theSlider);
         sliderBtnContainer.appendChild(OneDot)
     }
-
     return (
         <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'Séngal, Dakar'} title={<p>DÉVELOPPEMENT D'EXPERIENCE DE RÉALITÉ VIRTUELLE POUR LES ENTREPRISES</p>} />
+            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'Séngal, Dakar'} title={<p>EXPERIENCES DE RÉALITÉ VIRTUELLE</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'Séngal, Dakar'} title={<p>CRÉATION DE MAQUETTES </p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'Séngal, Dakar'} title={<p>VISUALISATIONS 3D DE PRODUITS</p>} />
             <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'Séngal, Dakar'} title={<p>VISUALISATIONS ARCHITECTURALS ET IMMOBILIERS</p>} />
@@ -303,7 +296,6 @@ function AccueilSlider() {
 }
 //!###############################################################
 function Slider({ giveSliderKey, title, date, theKey }) {
-
     useEffect(() => {
         giveSliderKey(theKey)
     });
@@ -318,7 +310,6 @@ function Slider({ giveSliderKey, title, date, theKey }) {
         </div>
     );
 }
-
 //!###############################################################
 function OneBigProject({ color, title, description, side, textcolor, theKey, image, link, The_Experience, The_Experience_Link }) {
     const [TheSide, setTheSide] = useState('');
