@@ -1,5 +1,11 @@
 import { React, useEffect, useState, Fragment } from 'react';
 import { Link } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import ImageforIntro1 from '../Style/Images/Project/Intro-1.jpg';
+import ImageforIntro2 from '../Style/Images/Project/Intro-2.jpg';
+import ImageforIntro3 from '../Style/Images/Project/ProductA-1.jpg';
+import ImageforIntro4 from '../Style/./Images/Project/Villa_Teranga_Al_Amin-1.jpg';
 
 import ImageProjectB1 from '../Style/Images/Project/City-9.jpg';
 import ImageProjectC2 from '../Style/Images/Project/Interior-1-2.jpg';
@@ -33,8 +39,8 @@ function Accueil({ GetImageToApp }) {
         let TheFooter = document.querySelector(".the_footer")
         TheFooter.style.opacity = '1';
 
-        let ThesliderImg = document.querySelectorAll(".slider")
-        let thePageWidth = window.innerWidth
+        // let ThesliderImg = document.querySelectorAll(".slider")
+        // let thePageWidth = window.innerWidth
         return () => {
             ToDisplayonBLoade.style.display = 'flex';
             AccueilContainer.scrollTop = 0;
@@ -47,7 +53,55 @@ function Accueil({ GetImageToApp }) {
 
     return (
         <div id="Accueil">
-            <AccueilSlider />
+            <div className="Accueil_Slider-2">
+                <Carousel>
+                    <div className='sliders'>
+                        <img loading="lazy" src={ImageforIntro1} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'><p>EXPERIENCES DE RÉALITÉ VIRTUELLE</p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div className='sliders'>
+                        <img loading="lazy" src={ImageforIntro2} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>CRÉATION DE MAQUETTES </p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div loading="lazy" className='sliders'>
+                        <img src={ImageforIntro3} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>VISUALISATIONS 3D DE PRODUITS</p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                    <div loading="lazy" className='sliders'>
+                        <img src={ImageforIntro4} />
+                        <div className='sliders_inner_container'>
+                            <div className='slider_title'>
+                                <p>VISUALISATIONS ARCHITECTURALS ET IMMOBILIERS</p>
+                            </div>
+                            <div className='slider_date'>
+                                Séngal, Dakar
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
+            </div>
+
+
             <section className='archviz_presantation' >
                 <h2 className='qui_somme_nous' >
                     Qui sommes-nous ?
@@ -233,81 +287,6 @@ function Accueil({ GetImageToApp }) {
             </section>
 
         </div >
-    );
-}
-//!###############################################################
-function AccueilSlider() {
-
-    const onClickOnDot = (e) => {
-        let AllSlider = document.querySelectorAll(".slider")
-        let AllDot = document.querySelectorAll(".dot")
-        let theSliderKey = e.target.getAttribute('theSlider')
-
-        AllDot.forEach(element => {
-            element.classList.remove('ativeDot')
-        });
-        e.target.classList.add('ativeDot')
-
-        AllSlider.forEach(element => {
-            element.style.opacity = '0'
-        });
-        AllSlider[theSliderKey - 1].style.opacity = '1'
-
-        setTimeout(function () {
-            AllSlider.forEach(element => {
-                element.style.zIndex = '1'
-            });
-            AllSlider[theSliderKey - 1].style.zIndex = '4'
-        }, 6100);
-    }
-
-    useEffect(() => {
-        let sliderBtnContainer = document.querySelector(".slider_btn_container")
-        let AllDot = sliderBtnContainer.childNodes
-
-        AllDot.forEach(element => {
-            element.addEventListener("click", onClickOnDot);
-        });
-
-        AllDot[0].classList.add('ativeDot')
-        let theCourentSlide = 0
-
-        return () => {
-            sliderBtnContainer.innerHTML = '';
-        }
-    }, [])
-    const CreateSliderBtn = (theSlider) => {
-        let sliderBtnContainer = document.querySelector(".slider_btn_container")
-        let OneDot = document.createElement("div")
-        OneDot.classList.add('dot');
-        OneDot.setAttribute("theSlider", theSlider);
-        sliderBtnContainer.appendChild(OneDot)
-    }
-    return (
-        <div className="Accueil_Slider">
-            <Slider giveSliderKey={CreateSliderBtn} theKey={1} date={'Séngal, Dakar'} title={<p>EXPERIENCES DE RÉALITÉ VIRTUELLE</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={2} date={'Séngal, Dakar'} title={<p>CRÉATION DE MAQUETTES </p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={3} date={'Séngal, Dakar'} title={<p>VISUALISATIONS 3D DE PRODUITS</p>} />
-            <Slider giveSliderKey={CreateSliderBtn} theKey={4} date={'Séngal, Dakar'} title={<p>VISUALISATIONS ARCHITECTURALS ET IMMOBILIERS</p>} />
-            <div className='slider_btn_container'>
-            </div>
-        </div>
-    );
-}
-//!###############################################################
-function Slider({ giveSliderKey, title, date, theKey }) {
-    useEffect(() => {
-        giveSliderKey(theKey)
-    });
-    return (
-        <div className='slider'>
-            <div className='slider_title'>
-                {title}
-            </div>
-            <div className='slider_date'>
-                {date}
-            </div>
-        </div>
     );
 }
 //!###############################################################
