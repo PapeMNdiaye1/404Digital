@@ -1600,7 +1600,7 @@
 #Accueil .software {
   width: 100vw;
   height: 5em;
-  margin: 10vw 0vw 10vw 0vw;
+  margin: 20vw 0vw 20vw 0vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1613,12 +1613,14 @@
 }
 
 #Accueil .software .unreal,
-#Accueil .software .blender,
-#Accueil .software .ds,
-#Accueil .software .oculus,
+#Accueil .software .yord,
+#Accueil .software .free,
+#Accueil .software .czech,
 #Accueil .software .meta,
 #Accueil .software .nvidia,
-#Accueil .software .apple,
+#Accueil .software .Ue,
+#Accueil .software .cutur,
+#Accueil .software .isep,
 #Accueil .software .arch {
   width: 4em;
   height: 4em;
@@ -1634,17 +1636,26 @@
           filter: invert(100);
 }
 
-#Accueil .software .blender {
-  background-image: url("../Style/Images/SVG/blender.png");
+#Accueil .software .yord {
+  background-image: url("../Style/Images/SVG/Yord.png");
+  width: 8em;
 }
 
-#Accueil .software .ds {
-  background-image: url("../Style/Images/SVG/3DS.png");
-}
-
-#Accueil .software .oculus {
-  background-image: url("../Style/Images/SVG/Oculus.png");
+#Accueil .software .cutur {
+  background-image: url("../Style/Images/SVG/Cultur.png");
   width: 12em;
+  background-color: #f1f1f1;
+}
+
+#Accueil .software .free {
+  background-image: url("../Style/Images/SVG/free.png");
+  width: 8em;
+}
+
+#Accueil .software .czech {
+  background-image: url("../Style/Images/SVG/Czech.png");
+  width: 12em;
+  background-color: #ffffff;
 }
 
 #Accueil .software .meta {
@@ -1655,13 +1666,19 @@
   background-image: url("../Style/Images/SVG/Nvidia.png");
 }
 
-#Accueil .software .apple {
-  background-image: url("../Style/Images/SVG/Apple.png");
+#Accueil .software .Ue {
+  background-image: url("../Style/Images/SVG/EU-EU-emblem-standard-version-positive-FR.png");
+  width: 12em;
 }
 
 #Accueil .software .arch {
   background-image: url("../Style/Images/SVG/Arch.png");
   width: 10em;
+}
+
+#Accueil .software .isep {
+  background-image: url("../Style/Images/SVG/isep.png");
+  width: 6em;
 }
 
 #Accueil .AccueilBigProjectsSection {
@@ -2098,6 +2115,15 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     height: 15em;
+    margin-bottom: 14em;
+  }
+  #Accueil .software .unreal,
+  #Accueil .software .yord,
+  #Accueil .software .free,
+  #Accueil .software .czech,
+  #Accueil .software .meta,
+  #Accueil .software .nvidia {
+    margin: 1em;
   }
   #Accueil .AccueilBigProjectsSection {
     width: 100%;

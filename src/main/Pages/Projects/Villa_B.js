@@ -1,15 +1,12 @@
 import { React, useEffect, useState, Fragment } from 'react';
 
 
-
 import ImageProjectC1 from '../../Style/Images/Project/Villa_B-1.jpg';
 import ImageProjectC2 from '../../Style/Images/Project/Villa_B-2.jpg';
 import ImageProjectC3 from '../../Style/Images/Project/Villa_B-3.jpg';
 import ImageProjectC4 from '../../Style/Images/Project/Villa_B-4.jpg';
 import ImageProjectC5 from '../../Style/Images/Project/Villa_B-5.jpg';
 import ImageProjectC6 from '../../Style/Images/Project/Villa_B-6.jpg';
-
-
 
 
 function SmallHouse1({ }) {
@@ -64,7 +61,6 @@ function SmallHouse1({ }) {
                     </div>
                 </div>
             }
-
             <div className='Villa_B_container'>
                 <div className='project_display'>
                     <h1 className='project_title'>
@@ -97,8 +93,5 @@ function SmallHouse1({ }) {
         </Fragment>
     );
 }
-
-
-
 
 export default SmallHouse1;

@@ -18,7 +18,6 @@ import ImageProject_4 from '../Style/Images/Infos/Event-12.jpg';
 
 function Accueil({ GetImageToApp }) {
 
-
     useEffect(() => {
 
         let ToDisplayonBLoade = document.querySelector(".before-loader")
@@ -40,8 +39,6 @@ function Accueil({ GetImageToApp }) {
         let TheFooter = document.querySelector(".the_footer")
         TheFooter.style.opacity = '1';
 
-        // let ThesliderImg = document.querySelectorAll(".slider")
-        // let thePageWidth = window.innerWidth
         return () => {
             ToDisplayonBLoade.style.display = 'flex';
             AccueilContainer.scrollTop = 0;
@@ -175,21 +172,25 @@ function Accueil({ GetImageToApp }) {
             </div>
 
             <div className='software'>
-                <div className='apple'>
+                <div className='Ue'>
                 </div>
-                <div className='blender'>
+                <div className='czech'>
+                </div>
+                <div className='free'>
+                </div>
+                <div className='yord'>
+                </div>
+                <div className='cutur'>
                 </div>
                 <div className='unreal'>
-                </div>
-                <div className='ds'>
-                </div>
-                <div className='oculus'>
                 </div>
                 <div className='meta'>
                 </div>
                 <div className='nvidia'>
                 </div>
                 <div className='arch'>
+                </div>
+                <div className='isep'>
                 </div>
             </div>
 

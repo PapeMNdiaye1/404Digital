@@ -296,16 +296,18 @@
     .software {
         width: 100vw;
         height: 5em;
-        margin: 10vw 0vw 10vw 0vw;
+        margin: 20vw 0vw 20vw 0vw;
         @include cent();
 
         .unreal,
-        .blender,
-        .ds,
-        .oculus,
+        .yord,
+        .free,
+        .czech,
         .meta,
         .nvidia,
-        .apple,
+        .Ue,
+        .cutur,
+        .isep,
         .arch {
             width: 4em;
             height: 4em;
@@ -320,35 +322,48 @@
             filter: invert(100);
         }
 
-        .blender {
-            background-image: url('../Style/Images/SVG/blender.png');
+        .yord {
+            background-image: url('../Style/Images/SVG/Yord.png');
+            width: 8em;
         }
-
-        .ds {
-            background-image: url('../Style/Images/SVG/3DS.png');
-        }
-
-        .oculus {
-            background-image: url('../Style/Images/SVG/Oculus.png');
+        .cutur {
+            background-image: url('../Style/Images/SVG/Cultur.png');
             width: 12em;
+            background-color: #f1f1f1;
         }
-
+        
+        .free {
+            background-image: url('../Style/Images/SVG/free.png');
+            width: 8em;
+        }
+        
+        .czech {
+            background-image: url('../Style/Images/SVG/Czech.png');
+            width: 12em;
+            background-color: #ffffff;
+        }
+        
         .meta {
             background-image: url('../Style/Images/SVG/Meta.png');
         }
-
+        
         .nvidia {
             background-image: url('../Style/Images/SVG/Nvidia.png');
         }
-
-        .apple {
-            background-image: url('../Style/Images/SVG/Apple.png');
+        
+        .Ue {
+            background-image: url('../Style/Images/SVG/EU-EU-emblem-standard-version-positive-FR.png');
+            width: 12em;
         }
-
         .arch {
             background-image: url('../Style/Images/SVG/Arch.png');
             width: 10em;
         }
+        .isep {
+            background-image: url('../Style/Images/SVG/isep.png');
+            width: 6em;
+        }
+
     }
 
     //!#####################################################################
@@ -720,13 +735,16 @@
             flex-wrap: wrap;
             transform: scale(.8);
             height: 15em;
-
+            margin-bottom:14em ;
+            
             .unreal,
-            .blender,
-            .ds,
-            .oculus,
+            .yord,
+            .free,
+            .czech,
             .meta,
-            .nvidia {}
+            .nvidia {
+                margin: 1em;
+            }
         }
 
         //!#####################################################################
