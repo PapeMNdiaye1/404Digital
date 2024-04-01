@@ -63,7 +63,11 @@ function Pharmacie1({ }) {
                         | 17 Octobre , 2023 |
                     </h3>
                     <p>
-                        "Renforcer les liens numériques ! 🤝🌐 404 Digital s'est associé à l'Ambassadeur de la République tchèque et à l'Ambassadeur de l'Union européenne, renforçant ainsi la collaboration entre nos pays dans le domaine numérique.
+                    La « Place des Métiers » est une activité ludique et participative adressée aux jeunes sur le
+thème des métiers qui vise à sensibiliser le public sur les opportunités de la formation
+professionnelle. L’objectif poursuivi par cette activité est de faire connaître l’initiative FIT !
+mais aussi de véhiculer une image plus attractive et plus moderne de la formation
+professionnelle.
                     </p>
                     <div className='TheImageContainer'>
                         <img onClick={displayImage} src={ImageProjectC3} width='100%' alt='  Pharmacie Design - 4' />

@@ -52,7 +52,11 @@ function Articles() {
 
 
                 <OneBigProject title={'FIT'} image={ImageProject_6}
-                    description={"_____________________ ________  ___ _ ________ _______ _____ ___"}
+                    description={`La « Place des Métiers » est une activité ludique et participative adressée aux jeunes sur le
+thème des métiers qui vise à sensibiliser le public sur les opportunités de la formation
+professionnelle. L’objectif poursuivi par cette activité est de faire connaître l’initiative FIT !
+mais aussi de véhiculer une image plus attractive et plus moderne de la formation
+professionnelle.`}
                     color={'#000'} textcolor={'#f1f1f1'} theKey={2} The_Experience={false} The_Experience_Link={''} link={'/FIT'} side={'right'} />
 
                 <OneBigProject title={`Musée Théodore-Monod d'art africain`} image={ImageProject_1}
